@@ -90,10 +90,6 @@ document
     document.querySelector(".overlay").classList.add("active");
     document.querySelector(".sign-up").classList.add("active");
     document.querySelector(".close-button").classList.add("active");
-    document.querySelector(
-      ".sign-up-desc"
-    ).innerHTML = `<p><a class="sign-up-link" href="#">Create Account!</a></p>
-  `;
     document.querySelector(".sign-in-heading div h3").innerText =
       "Welcome Back!";
   });

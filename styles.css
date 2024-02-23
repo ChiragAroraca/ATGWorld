@@ -363,6 +363,12 @@ hr {
 .sign-in-desc {
   margin-right: 5%;
 }
+.sign-up-desc p {
+  display: inline-block;
+}
+.sign-up-desc {
+  margin-right: 2%;
+}
 .sign-up-image img {
   margin-right: 45px;
 }
@@ -528,7 +534,9 @@ hr {
     color: white;
     border-radius: 7px;
   }
-
+  .quote {
+    display: none;
+  }
   .header h1 {
     text-align: center;
     margin: 20% auto 5% auto;
@@ -642,6 +650,10 @@ hr {
   }
 }
 @media (max-width: 1300px) {
+  .sign-up-desc p {
+    display: none;
+  }
+
   .author h6 {
     font-size: 14px;
   }
