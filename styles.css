@@ -1,0 +1,677 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+.navbar-brand {
+  margin-left: 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+.create-account {
+  margin-top: 1%;
+  margin-right: 5%;
+}
+.create-account p span {
+  color: blue;
+}
+.create-account:hover {
+  cursor: pointer;
+}
+.search-button {
+  width: 15%;
+  border: none !important;
+  position: relative;
+  right: 87%;
+}
+
+.form-control {
+  text-indent: 40px;
+  border-radius: 20px !important;
+  background-color: #f2f2f2 !important;
+  width: 400px !important;
+}
+.form-control::placeholder {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.header {
+  overflow: auto;
+  height: 55vh;
+  background-position: center;
+  background-image: url("/public/images/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header h1 {
+  font-size: 2.25;
+  font-weight: 700;
+  color: white;
+  margin: 30vh 0 10px 14.7%;
+}
+.header h3 {
+  font-weight: 500;
+  margin: 0 0 0 15%;
+  font-size: 1.125rem;
+  color: white;
+}
+
+#articles {
+  margin: 20px auto 0 auto;
+  width: 80% !important;
+}
+.article-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-toggle {
+  margin-right: 2vw;
+  color: black !important;
+  font-size: 0.9rem;
+  font-weight: 900;
+  background-color: #edeef0 !important;
+  border-radius: 4px;
+}
+
+.write-post {
+  display: flex;
+}
+hr {
+  position: relative;
+  bottom: 10px;
+}
+.article-navigation:hover {
+  border-bottom: 2px solid black;
+}
+
+.card {
+  width: 88%;
+  margin: 5px 0 10px 0;
+}
+
+.card-title {
+  font-size: 1.125rem;
+}
+.card-desc {
+  padding-right: 5%;
+  margin: 7px 0 10px 2px;
+  display: block;
+  font-size: 1.37rem;
+  font-weight: 500;
+}
+.card-text {
+  font-size: 1.1875rem;
+}
+.card-ending {
+  display: flex;
+  justify-content: space-between;
+}
+.card-ending div {
+  width: 30%;
+}
+.author {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-ending div h6 {
+  position: relative;
+  top: 25%;
+}
+.third-card {
+  display: flex;
+}
+.third-card h6 {
+  margin: 3% 5% 3% 3%;
+}
+.card-button {
+  margin: 0 auto 0 auto;
+  height: 35px;
+  text-align: center;
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+}
+.card-button:hover {
+  background-color: red;
+  color: white;
+}
+.card-button2 {
+  margin: 0 auto 0 auto;
+  height: 35px;
+  text-align: center;
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: green;
+}
+.card-button2:hover {
+  background-color: green;
+  color: white;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-article {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.share-article p {
+  margin: 0 5% 0 0;
+}
+.share-article div {
+  width: 15%;
+  padding: 2px;
+  height: 27px;
+  text-align: center;
+  background-color: #edeef0;
+  margin-right: 10%;
+}
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+.container1 {
+  width: 55%;
+}
+.container2 {
+  position: sticky;
+  top: 10vh;
+  height: 55vh;
+  margin-top: 5%;
+  width: 30%;
+}
+.reccomended-groups {
+  margin: 10% 0;
+  display: flex;
+}
+.reccomended-groups img {
+  width: 7%;
+  height: 7%;
+  margin-right: 3%;
+}
+.follow-parent {
+  display: none;
+}
+.follow-container {
+  display: flex;
+  flex-direction: column;
+}
+.follow {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.follow img {
+  height: 5%;
+  margin-right: 0%;
+}
+.follow p {
+  font-weight: 500;
+  margin-top: 1%;
+}
+.follow-p {
+  width: 40%;
+  text-align: left;
+}
+.follow .follow-button {
+  width: 30%;
+  height: 4vh;
+  border-radius: 25px;
+  border: none;
+  background-color: #edeef0;
+  font-weight: 500;
+}
+.follow-display {
+  display: block;
+}
+.followed {
+  width: 30%;
+  height: 4vh;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  background-color: black;
+  font-weight: 500;
+}
+.sign-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 45vw;
+  height: 65vh;
+  z-index: 999;
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998; /* Tn ensure the overlay is above other content */
+  display: none; /* Initially hidden */
+}
+
+.quote {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #008a45;
+  background-color: #effff4;
+}
+.sign-up-heading {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up-heading div h3 {
+  margin-left: 30px;
+  font-weight: 700;
+}
+.sign-up-heading div p {
+  margin: 5px 20px 0 0;
+  font-weight: 500;
+}
+.sign-up-heading div p .sign-in-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.sign-up-form {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-layout {
+  margin-left: 30px;
+  display: flex;
+}
+.first-layout input {
+  text-indent: 10px;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 3px;
+  border: 1px solid #d9d9db;
+}
+.first-layout .first-name {
+  border-right: none;
+}
+
+.second-layout {
+  display: flex;
+  flex-direction: column;
+}
+.second-layout .sign-up-input {
+  text-indent: 10px;
+  margin-left: 30px;
+  border-radius: 3px;
+  width: 20vw;
+  height: 5vh;
+  border: 1px solid #d9d9db;
+  border-top: none;
+}
+.second-layout .create-account-button {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: none;
+  background-color: #2f6ce5;
+  color: white;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.create-account-button:hover {
+  color: rgb(23, 23, 23);
+  transition: 0.3s ease-in-out;
+}
+.second-layout .social-button {
+  width: 20vw;
+  height: 5vh;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 0.6px solid #d9d9db;
+  background-color: transparent;
+}
+
+.second-layout .social-button img {
+  margin-right: 10px;
+  margin-bottom: 2.5px;
+}
+.social-button:hover {
+  background-color: #2f6ce5;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.sign-in-desc p {
+  display: inline-block;
+}
+.sign-in-desc {
+  margin-right: 5%;
+}
+.sign-up-image img {
+  margin-right: 45px;
+}
+.sign-up-image p {
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+.close-button {
+  position: fixed;
+  top: 15%;
+  left: 72%;
+  border-radius: 50px;
+  text-align: center;
+  transform: translate(-30%, -50%);
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  display: none;
+}
+.close-button:hover {
+  cursor: pointer;
+  background-color: #cfcfcf;
+  transition: 0.3s ease-in-out;
+}
+.active {
+  display: inline-block;
+}
+.disabled {
+  display: none;
+}
+.sign-in {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 45vw;
+  height: 58vh;
+  z-index: 1000;
+  display: none;
+}
+.sign-in-input {
+  text-indent: 10px;
+  margin-left: 30px;
+  border-radius: 3px;
+  width: 20vw;
+  height: 5vh;
+  border: 1px solid #d9d9db;
+}
+.second-layout2 p {
+  margin-left: 40%;
+  margin-top: 7%;
+  font-weight: 500;
+}
+.sign-in-heading {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in-heading div h3 {
+  margin-left: 30px;
+  font-weight: 700;
+}
+.sign-in-heading div p {
+  margin: 5px 20px 0 0;
+  font-weight: 500;
+}
+.sign-in-heading div p a {
+  text-decoration: none;
+}
+
+.sign-in-form {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in-image img {
+  margin-right: 45px;
+}
+.sign-in-image p {
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+.second-layout2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-layout2 .create-account-button2 {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: none;
+  background-color: #2f6ce5;
+  color: white;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.create-account-button2:hover {
+  color: rgb(23, 23, 23);
+  transition: 0.3s ease-in-out;
+}
+.second-layout2 .social-button2 {
+  width: 20vw;
+  height: 5vh;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 0.6px solid #d9d9db;
+  background-color: transparent;
+}
+
+.second-layout2 .social-button2 img {
+  margin-right: 10px;
+  margin-bottom: 2.5px;
+}
+.second-layout2 p {
+  cursor: pointer;
+}
+.display-sign-in {
+  display: inline-block;
+}
+.profile {
+  display: flex;
+}
+.profile img {
+  width: 30%;
+  height: 10%;
+  margin-right: 20px;
+}
+.profile p {
+  margin-top: 5%;
+  font-size: 1rem;
+  width: 100%;
+}
+.mobile-nav {
+  display: none;
+}
+/* MEDIA QUERIES */
+@media (max-width: 990px) {
+  .navbar {
+    display: none !important;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-nav h4 {
+    margin-left: 4%;
+  }
+  .mobile-nav i {
+    margin: 5% 0 0 5%;
+    color: white;
+    font-size: 1.7rem;
+  }
+  .mobile-nav .join-group-mobile {
+    margin: 5% 10vw 0 0;
+    width: 20vw;
+    height: 4vh;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 7px;
+  }
+
+  .header h1 {
+    text-align: center;
+    margin: 20% auto 5% auto;
+  }
+  .header h3 {
+    text-align: center;
+    margin: 2% auto 0 auto;
+  }
+
+  .hr {
+    display: none;
+  }
+  .mobile-nav .filter-button {
+    text-align: left;
+    text-indent: 1vw;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    width: 19vw;
+    background-color: #f1f3f5;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .filter-button:hover {
+    background-color: #b5b5b5;
+  }
+
+  #articles {
+    width: 100% !important;
+    margin: 3% 0 0 0 !important;
+  }
+  .container1 {
+    width: 100% !important;
+  }
+
+  .container2 {
+    display: none;
+  }
+  .sign-up {
+    position: fixed;
+    top: 67vh;
+    width: 99vw;
+    border-radius: 10px;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-layout input {
+    width: 43vw;
+  }
+  .second-layout .sign-up-input {
+    width: 86vw;
+  }
+  .second-layout .create-account-button {
+    width: 43vw;
+  }
+  .second-layout .social-button {
+    width: 86vw;
+  }
+  .sign-up-image p {
+    margin-top: 5%;
+    text-align: center;
+  }
+  .sign-in-desc {
+    position: relative;
+    top: 29vh;
+    right: 15vw;
+  }
+  .sign-in-desc p {
+    display: none;
+  }
+  .sign-up-image img {
+    display: none;
+  }
+  .sign-in-image img {
+    display: none;
+  }
+  .close-button {
+    position: fixed;
+    top: 33vh;
+    left: 95vw;
+  }
+  .sign-in {
+    position: fixed;
+    top: 67vh;
+    width: 99vw;
+    height: 65vh;
+  }
+  .quote {
+    display: none;
+  }
+  .second-layout2 .sign-in-input {
+    width: 86vw;
+  }
+  .second-layout2 .create-account-button2 {
+    width: 43vw;
+  }
+  .second-layout2 .social-button2 {
+    width: 86vw;
+  }
+  .sign-up-desc {
+    position: relative;
+    top: 19vh;
+    right: 15vw;
+  }
+  .author img {
+    height: 90%;
+    margin-right: 3%;
+  }
+}
+@media (max-width: 1300px) {
+  .author h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .mobile-nav .filter-button {
+    width: 28vw;
+  }
+  .mobile-nav .join-group-mobile {
+    width: 45vw;
+  }
+}
+@media (max-width: 315px) {
+  .author {
+    display: flex;
+    flex-direction: column;
+  }
+  .author img {
+    width: 50%;
+  }
+}
+@media (max-width: 1600px) {
+  .sign-up-image p {
+    margin: 0 3% 10% 10%;
+    padding: 3vw;
+  }
+  .sign-up-image img {
+    width: 80%;
+  }
+  .sign-in-image img {
+    width: 80%;
+  }
+}
